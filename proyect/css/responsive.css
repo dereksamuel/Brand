@@ -1,0 +1,22 @@
+@media screen and (max-width: 760px) {
+  footer {
+    position: relative;
+  }
+  .products {
+    display: block;
+    max-height: fit-content;
+  }
+  .product {
+    margin-top: auto;
+  }
+  .main_section {
+    padding: 4%;
+  }
+  .card {
+    margin: 0;
+  }
+  .form {
+    width: 100%;
+  }
+}
+

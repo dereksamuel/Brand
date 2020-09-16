@@ -1,0 +1,91 @@
+.fadeIn {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-name: FadeIn;
+  -webkit-animation-name: FadeIn;
+}
+
+.fadeInDown {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-name: FadeInDown;
+  -webkit-animation-name: FadeInDown;
+}
+
+.fadeInUp {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-name: FadeInUp;
+  -webkit-animation-name: FadeInUp;
+}
+
+.skewCard {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-name: SkewCard;
+  -webkit-animation-name: SkewCard;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0%, 0);
+    transform: translate3d(0, 0%, 0);
+  }
+}
+
+@keyframes FadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0%, 0);
+    transform: translate3d(0, 0%, 0);
+  }
+}
+
+@keyframes SkewCard {
+  0% {
+    opacity: 0;
+    -webkit-transform: skewY(20deg) translate3d(0, 100%, 0);
+    transform: skewY(20deg) translate3d(0, 100%, 0);
+  }
+  50% {
+    opacity: .5;
+    -webkit-transform: skewY(-20deg);
+    transform: skewY(-20deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: skewY(0deg) translate3d(0, 0%, 0);
+    transform: skewY(0deg) translate3d(0, 0%, 0);
+  }
+}

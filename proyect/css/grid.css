@@ -1,0 +1,88 @@
+.container {
+  max-width: 900px;
+  margin: auto;/*al centro container*/
+  margin-top: 177px;
+  margin-bottom: 177px;
+}
+
+.row {
+  display: flex;
+  margin-top: 100px;
+}
+
+.col.c1 {
+  width: 8.3333%;
+}
+
+.col.c2 {
+  width: 16.6666%;
+}
+
+.col.c3 {
+  width: 24.9999%;
+}
+
+.col.c4 {
+  width: 33.3332%;
+}
+
+.col.c5 {
+  width: 41.6665%;
+}
+
+.col.c6 {
+  width: 49.9998%;
+}
+
+.col.c7 {
+  width: 58.3331%;
+}
+
+.col.c8 {
+  width: 66.6664%;
+}
+
+.col.c9 {
+  width: 74.9997%;
+}
+
+.col.c10 {
+  width: 83,333%;
+}
+
+.col.c11 {
+  width: 91.6663%;
+}
+
+.col.c12 {
+  width: 100%;
+}
+
+.col {
+  padding: 10px;
+}
+
+.col p {
+  max-width: 347px;
+  margin: auto;
+}
+
+.product-img {
+  width: 170px;
+}
+
+@media screen and (max-width: 760px) {
+  .row {
+    display: block;
+    text-align: center;
+  }
+  .col.c2, .col.c8, .col.c3, .col.c4, .col.c5, .col.c11, .col.c10, .col.c12, .col.c7, .col.c9 {
+    width: 100%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .container h1 {
+    text-align: center;
+  }
+}

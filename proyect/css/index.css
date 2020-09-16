@@ -1,0 +1,96 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: var(--normal-font-size);
+  font-family: var(--my-font);
+  color: var(--black-gray);
+}
+
+/* Vars - init */
+
+:root {
+  --green-color: #6EC427;
+  --green-color-dark: #5daf1a;
+  --white: #ffffff;
+  --black-gray: #313337;
+  /* Types */
+  --my-font: 'Open Sans', sans-serif;
+  --normal-font-size: 12px;
+  --big-font-size: 17px;
+  /* Space */
+  --space: 10px;
+  /* TOOGLE BAR */
+  --widthBar: 8px;
+  --colorWhiteBlackGray: #85898f;
+  --colorWhiteBlackGrayActive: #a3a9b1;
+  --box-shadow-var: 0 0 2px black;
+}
+
+/* Vars - end */
+
+.btn {
+  padding: var(--space);
+  border-radius: 5px;
+  background-color: var(--green-color);
+  color: var(--white);
+  text-align: center;
+  width: 100%;
+  font-size: var(--big-font-size);
+  outline: transparent;
+  border: none;
+}
+
+.btn a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--green-color-dark);
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(.98);
+  box-shadow: none;
+}
+
+::-webkit-scrollbar {
+  width: var(--widthBar);
+  background-color: var(--black-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--colorWhiteBlackGray);
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--colorWhiteBlackGrayActive);
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: var(--normal-font-size);
+  padding-bottom: var(--space);
+}
+
+/* ::-webkit-scrollbar-button:single-button {
+  background-color: var(--green-color);
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+  color: var(--white);
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent var(--black-gray) transparent;
+}
+/* Down */
+/* ::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: var(--black-gray) transparent transparent transparent;
+} */
